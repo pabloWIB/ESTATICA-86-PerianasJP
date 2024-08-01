@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/normalize.css">
-	<link rel="stylesheet" href="CSS/styles.css">
-	<link rel="icon" type="image/x-icon" href="IMG/icon.png">
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Persianas JP ofrece reparación de persianas 24/7 en Carrer Sabaters 13. Servicio rápido y eficiente para emergencias. Contáctanos ahora." />
+    <link rel="canonical" href="https://persianasjp.com/" />
+	<!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Persianas JP - Reparación de Persianas 24/7 en Carrer Sabaters 13" />
+    <meta property="og:description" content="Persianas JP ofrece reparación de persianas 24/7 en Carrer Sabaters 13. Servicio rápido y eficiente para emergencias. Contáctanos ahora." />
+    <meta property="og:image" content="https://persianasjp.com/IMG/icon.png" />
+    <meta property="og:url" content="https://persianasjp.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Persianas JP" />
+    <meta property="og:locale" content="es_ES" />
+	 <!-- Twitter Card Meta Tags -->
+	<meta name="twitter:title" content="Persianas JP - Reparación de Persianas 24/7 en Carrer Sabaters 13" />
+	<meta name="twitter:description" content="Persianas JP ofrece reparación de persianas 24/7 en Carrer Sabaters 13. Servicio rápido y eficiente para emergencias. Contáctanos ahora." />
+	<meta name="twitter:image" content="https://persianasjp.com/IMG/icon.png" />
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Persianas JP",
+			"url": "https://persianasjp.com/",
+			"logo": "https://persianasjp.com/IMG/icon.png",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+34-123-456-789",
+				"contactType": "Customer Service"
+			},
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Carrer Sabaters 13",
+				"addressLocality": "Ciudad",
+				"addressRegion": "Provincia",
+				"postalCode": "00000",
+				"addressCountry": "ES"
+			},
+			"sameAs": [
+				"https://www.facebook.com/persianasjp",
+				"https://twitter.com/persianasjp"
+			]
+		}
+	</script>
+	   
+	<link rel="stylesheet" href="CSS/normalize.css" />
+	<link rel="stylesheet" href="CSS/styles.css" />
+	<link rel="icon" type="image/x-icon" href="IMG/favicon-32x32.png" />
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	<title>Persianas JP</title>
 </head>
 <body>
@@ -25,7 +68,7 @@
 							<h2>WhatsApp</h2>
 						</div>
 					</a>
-					<a target="_blank" href="607255335">
+					<a href="tel:+34607255335">
 						<div>
 							<img src="IMG/phone.svg" alt="whatsapp">
 						</div>
@@ -97,36 +140,30 @@
 		</div>
 		<div>
 			<form action="" id="firstForm">
-
 				<div class="inputs-container">
 					<div>
 						<img src="IMG/user.svg" alt="Name">
 					</div>
 					<input class="input-getdata" type="text" id="name" name="name" autocomplete="name" placeholder="Nombre y Apellidos">
 				</div>
-
 				<div class="inputs-container">
 					<div>
 						<img src="IMG/blackPhone.svg" alt="telephone">
 					</div>
 					<input class="input-getdata" type="tel" id="cellphone" name="Asunto" autocomplete="tel" placeholder="Teléfono">
 				</div>
-
-
 				<div class="inputs-container">
 					<div>
 						<img src="IMG/blackMail.svg" alt="Asunto">
 					</div>
 					<input class="input-getdata" type="text" id="city" name="Asunto" placeholder="Asunto">
 				</div>
-
 				<div class="inputs-container">
 					<div>
-						<img src="IMG/blackMail.svg" alt="Descripción">
+						<img src="IMG/message.svg" alt="Descripción">
 					</div>
 					<input class="input-getdata" type="text" id="postal" name="Descripción" placeholder="Descripción">
 				</div>
-				
 				<div class="error-div-hide" id="findErrorsDiv">
 				</div>
 				<button type="submit" value="ENVIAR">ENVIAR</button>
@@ -147,8 +184,8 @@
 			<h3>Transforma tu espacio hoy mismo</h3>
 			<div>
 				<p>
-					Obtén servicios expertos de reparación e instalación de persianas en Carrer Sabaters 13. Contacta a P
-					ersianas JP ahora.
+					Obtén servicios expertos de reparación e instalación de persianas en Carrer Sabaters 13. Contacta a 
+					Persianas JP ahora.
 				</p>
 			</div>
 			<a target="_blank" href="https://api.whatsapp.com/send/?phone=34607255335&text&type=phone_number&app_absent=0%22">
@@ -208,6 +245,42 @@
 			</div>
 		</div>
 	</footer>
+	<div class="whatsappScreenPositionInternal">
+		<div class="modalWindow" id="modalWindow">
+		  <div>
+			<div>
+			  <div>
+				<p>Escribenos</p>
+			  </div>
+			  <div id="closeWhatsApp">
+				<img src="IMG/close.svg" alt="Close">
+			  </div>
+			</div>
+			<div>
+			  <div>
+				<div>
+				  <p>Hola👋, por favor déjanos tu mensaje.</p>
+				</div>
+			  </div>
+			  <div>
+				<div>
+				  <div>
+					<textarea id="mensajeWhatsApp" maxlength="500" name="message" placeholder="Mensaje..." aria-label="Mensaje..." tabindex="0"></textarea>
+				  </div>
+				  <button type="button" id="sendMensajeWhatsApp">
+					<img src="IMG/send.svg" alt="send">
+				  </button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="whatsappCallAction">
+		  <div id="openWhatsApp">
+			<img src="IMG/whatsappNormal.svg" alt="WhatsApp">
+		  </div>
+		</div>
+	</div>
 	<script src="JS/script.js">
 	</script>
 </body>

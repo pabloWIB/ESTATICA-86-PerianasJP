@@ -5,16 +5,10 @@ body {
 }
 
 header {
-  -webkit-transition: 10s;
   transition: 10s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   background: url("../IMG/img2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,35 +16,21 @@ header {
   padding-bottom: 5rem;
 }
 header > :nth-child(1) {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 header > :nth-child(1) {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1rem 0rem;
 }
 header > :nth-child(1) > :nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   width: 92.5%;
   max-width: 1200px;
@@ -62,36 +42,21 @@ header > :nth-child(1) > :nth-child(1) > :nth-child(1) h1 {
   font-weight: 700;
 }
 header > :nth-child(1) > :nth-child(1) > :nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row wrap;
+  align-items: center;
   gap: 1rem;
 }
 header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a {
   all: unset;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row wrap;
+  align-items: center;
   gap: 0.5rem;
   cursor: pointer;
   border: 2px solid white;
   border-radius: 7.5px;
   padding: 0.5rem;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a > :nth-child(1) {
@@ -108,28 +73,18 @@ header > :nth-child(1) > :nth-child(1) > :nth-child(2) > a h2 {
   color: white;
 }
 header > :nth-child(1) > :nth-child(1) > :nth-child(2) a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 0.3s;
+  transform: scale(1.05);
   transition: 0.3s;
 }
 header > :nth-child(2) {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   opacity: 0;
 }
 header > :nth-child(2) {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: column wrap;
+  align-items: center;
   text-align: center;
   max-width: 1200px;
   width: 92.5%;
@@ -156,35 +111,20 @@ header > :nth-child(2) > :nth-child(3) p, header > :nth-child(2) > :nth-child(4)
   font-weight: 500;
 }
 header > :nth-child(2) a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row wrap;
+  align-items: center;
   cursor: pointer;
 }
 header > :nth-child(2) a > :nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row wrap;
+  align-items: center;
   position: relative;
 }
 header > :nth-child(2) a > :nth-child(1) > :nth-child(1), header > :nth-child(2) a > :nth-child(1) > :nth-child(2) {
   width: 100%;
   max-width: 50px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   scale: 2;
 }
@@ -207,34 +147,24 @@ header > :nth-child(2) a > :nth-child(1):hover > :nth-child(2) {
 }
 
 .headerAnimation > :nth-child(1) {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-transition: 1s;
+  transform: translateY(0%);
   transition: 1s;
 }
 .headerAnimation > :nth-child(2) {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
   opacity: 1;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 @media (max-width: 650px) {
   header > :nth-child(1) :nth-child(1) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     gap: 1rem;
   }
 }
 @media (max-width: 390px) {
   header > :nth-child(1) > :nth-child(1) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     gap: 1rem;
   }
   header > :nth-child(1) > :nth-child(1) > :nth-child(2) a h2 {
@@ -242,31 +172,19 @@ header > :nth-child(2) a > :nth-child(1):hover > :nth-child(2) {
   }
 }
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   width: 100%;
 }
 main div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   width: 100%;
   background-color: red;
   margin: 0 auto;
 }
 main div div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 main div div img {
   width: 100%;
@@ -275,26 +193,16 @@ main div div img {
 aside, section, nav {
   background: #eefbf3;
   padding: 5rem 0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   gap: 3rem;
 }
 aside div, section div, nav div {
   margin: 0 auto;
   width: 92.5%;
   max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   gap: 1.5rem;
 }
 aside div h3, aside div h4, section div h3, section div h4, nav div h3, nav div h4 {
@@ -309,16 +217,9 @@ aside div p, section div p, nav div p {
   color: rgb(17, 24, 39);
 }
 aside > :nth-child(2), section > :nth-child(2), nav > :nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: column wrap;
+  align-items: center;
   text-align: center;
 }
 aside > :nth-child(2) div, section > :nth-child(2) div, nav > :nth-child(2) div {
@@ -330,107 +231,54 @@ aside > :nth-child(2) a, section > :nth-child(2) a, nav > :nth-child(2) a {
   cursor: pointer;
   padding: 1rem;
   background: #21513B;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 7.5px;
   color: white;
   font-weight: 700;
   font-size: 20px;
-  -webkit-animation: heyClickMe 3.5s infinite ease-in-out;
-          animation: heyClickMe 3.5s infinite ease-in-out;
-}
-
-@-webkit-keyframes heyClickMe {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  animation: heyClickMe 3.5s infinite ease-in-out;
 }
 
 @keyframes heyClickMe {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 footer > :nth-child(1) {
   background: #21513B;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: column wrap;
+  justify-content: space-between;
   color: white;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   place-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
   width: 90%;
   max-width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   gap: 0.55rem;
   width: 33%;
 }
@@ -448,19 +296,10 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-ch
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
   width: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) h2 {
   all: unset;
@@ -470,16 +309,9 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-ch
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) {
   width: 33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) h4 {
   all: unse;
@@ -493,35 +325,19 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
   background: #eefbf3;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 0rem;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: column wrap;
+  align-items: center;
   gap: 0.95rem;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) {
@@ -538,13 +354,8 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(1) img
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   gap: 0.85rem;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) h4, footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) p {
@@ -559,17 +370,10 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) h4 
   cursor: default;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(3) {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   place-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 0.75rem;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(1) {
@@ -583,68 +387,35 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
 
 @media (max-width: 600px) {
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
   }
   footer > :nth-child(1) {
     background: #21513B;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: space-between;
     color: white;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(1) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     place-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin: 0 auto;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
     width: 90%;
     max-width: 1200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     gap: 0.55rem;
     width: 33%;
   }
@@ -662,19 +433,10 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
     width: 33%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) h2 {
     all: unset;
@@ -684,16 +446,9 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) {
     width: 33%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-flow: row wrap;
+    justify-content: flex-end;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(3) h4 {
     all: unse;
@@ -707,19 +462,10 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
     background: #eefbf3;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -727,16 +473,9 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
     gap: 1rem;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-flow: column wrap;
+    align-items: center;
     gap: 1rem;
     width: 100%;
   }
@@ -754,13 +493,8 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) {
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     gap: 2rem;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) h4, footer > :nth-child(1) > :nth-child(1) > :nth-child(2) > div > :nth-child(2) p {
@@ -775,17 +509,10 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
     cursor: default;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(3) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     place-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 0.75rem;
   }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(1) {
@@ -798,27 +525,15 @@ footer > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(2) {
   }
 }
 nav > :nth-child(2) form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  flex-flow: column nowrap;
   gap: 1rem;
   width: 100%;
 }
 nav > :nth-child(2) form .inputs-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row wrap;
+  align-items: center;
   gap: 10px;
   border-radius: 8px;
   width: auto;
@@ -826,8 +541,7 @@ nav > :nth-child(2) form .inputs-container {
   border: 1px solid black;
 }
 nav > :nth-child(2) form .inputs-container:hover {
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 nav > :nth-child(2) form .inputs-container > :nth-child(1) {
   width: 100%;
@@ -848,7 +562,6 @@ nav > :nth-child(2) form button {
   cursor: pointer;
   padding: 1rem;
   background: #21513B;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 7.5px;
   color: white;
@@ -856,9 +569,148 @@ nav > :nth-child(2) form button {
   font-size: 18px;
   margin: 0 auto;
   transition: 0.3s;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 nav > :nth-child(2) form button:hover {
   scale: 1.025;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+nav > :nth-child(2) form .error-div-show {
+  margin: 0 auto;
+  width: min(590px, 90%);
+}
+
+.whatsappScreenPositionInternal {
+  position: fixed;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  right: 0;
+  bottom: 0%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+}
+.whatsappScreenPositionInternal .modalWindow {
+  width: 100%;
+  display: none;
+  flex-flow: column wrap;
+  transform: translateY(25%);
+  opacity: 0%;
+  visibility: 0;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) {
+  background: linear-gradient(to right, #25D366, #128C7E);
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 12px 12px 0px 0px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(1), .whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) {
+  margin: 0 auto;
+  width: 90%;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0rem;
+  width: 85%;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(1) > :nth-child(1) p {
+  all: unset;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  width: min(30px, 100%);
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(1) > :nth-child(2) img {
+  width: 100%;
+  cursor: pointer;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) {
+  border-radius: 6px 6px 0px 0px;
+  background: url("../IMG/fondoWhatsApp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 1rem 0rem 0rem 0rem;
+  gap: 6.5rem;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90%;
+  border-radius: 12px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  background: #DCF8C6;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+  margin: 0 auto;
+  width: 94%;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) > :nth-child(2) {
+  border-top: 1px solid #c8c8c8;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) > :nth-child(2) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) > :nth-child(2) > :nth-child(1) textarea {
+  all: unset;
+  background: white;
+  resize: none;
+  border: none;
+  font-weight: 400;
+  transform: translateY(20%) translateX(3.5%);
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) > :nth-child(2) button {
+  all: unset;
+  cursor: pointer;
+  width: min(26px, 100%);
+}
+.whatsappScreenPositionInternal .modalWindow > :nth-child(1) > :nth-child(2) > :nth-child(2) button img {
+  width: 100%;
+}
+.whatsappScreenPositionInternal .modalWindowNew {
+  display: flex;
+  transform: scale(1) translateY(0%) translateX(0%);
+  opacity: 100%;
+  visibility: 1;
+}
+.whatsappScreenPositionInternal .whatsappCallAction {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  z-index: 2000;
+}
+.whatsappScreenPositionInternal .whatsappCallAction > :nth-child(1) {
+  width: min(50px, 100%);
+}
+.whatsappScreenPositionInternal .whatsappCallAction > :nth-child(1):hover {
+  transform: scale(1.05);
+}
+.whatsappScreenPositionInternal .whatsappCallAction > :nth-child(1) img {
+  width: 100%;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

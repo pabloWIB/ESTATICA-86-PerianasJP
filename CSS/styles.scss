@@ -635,16 +635,161 @@ nav{
                 font-size: 18px;
                 margin: 0 auto;
                 transition: .3s;
+                box-shadow: 0px 0px 5px 1px rgba(#000000, .2);
                 &:hover{
                     scale: 1.025;
                     transition: .3s;
                 }
             }
+            .error-div-hide{
+            }
+            .error-div-show{
+                margin: 0 auto;
+                width: min(590px, 90%);
+            }
         }
     }
 }
 
-
 // NAV ---
-            
-                
+
+// WhatsApp screen 
+     
+.whatsappScreenPositionInternal{
+    position: fixed;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    right: 0;
+    bottom: 0%;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    gap: .5rem;
+    .modalWindow{
+        width: 100%;
+        display: none;
+        flex-flow: column wrap;
+        transform: translateY(25%);
+        opacity: 0%;
+        visibility: 0;
+        >:nth-child(1){
+            background: linear-gradient(to right, #25D366, #128C7E); 
+            display: flex;
+            flex-flow: column wrap;
+            border-radius: 12px 12px 0px 0px;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+            >:nth-child(1), >:nth-child(2){
+                margin: 0 auto;
+                width: 90%;
+            }
+            >:nth-child(1){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                padding: .65rem 0rem;
+                width: 85%;
+                >:nth-child(1){
+                    p{
+                        all: unset;
+                        font-size: 17px;
+                        color: rgb(255, 255, 255);
+                        font-weight: 500;
+                    }
+                }
+                >:nth-child(2){
+                    width: min(30px, 100%);
+                    img{
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+            }
+            >:nth-child(2){
+                border-radius: 6px 6px 0px 0px;
+                background: url("../IMG/fondoWhatsApp.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                padding: 1rem 0rem 0rem 0rem;
+                gap: 6.5rem;
+                >:nth-child(1){
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 90%;
+                    border-radius: 12px;
+                    display: flex;
+                    place-content: center;
+                    align-items: center;
+                    padding: .5rem 0rem;
+                    background: #DCF8C6;
+                    >:nth-child(1){
+                        margin: 0 auto;
+                        width: 94%;
+                    }
+                }
+                >:nth-child(2){
+                    border-top: 1px solid #c8c8c8;
+                    background-color: white;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    >:nth-child(1){
+                        margin: 0 auto;
+                        width: 90%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        textarea{
+                            all: unset;
+                            background: white;
+                            resize: none;
+                            border: none;
+                            font-weight: 400;
+                            transform: translateY(20%) translateX(3.5%);
+                        }
+                    }
+                    button{
+                        all: unset;
+                        cursor: pointer;
+                        width: min(26px, 100%);
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modalWindowNew{
+        display: flex;
+        transform: scale(1) translateY(0%) translateX(0%);
+        opacity: 100%;
+        visibility: 1;
+    }
+    .whatsappCallAction{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        z-index: 2000;
+        >:nth-child(1){
+            width: min(50px, 100%);
+            &:hover{
+                transform: scale(1.05);
+            }
+            img{
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// WhatsApp screen ---

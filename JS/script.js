@@ -56,7 +56,7 @@ document.getElementById('firstForm').addEventListener('submit', function(event){
 
         console.log(info); 
 
-        let mailtoLink = 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=jhordy.kaue@icloud.com' + encodeURIComponent('Nuevo mensaje de contacto') + '&body=' + encodeURIComponent(info);
+        let mailtoLink = 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=jhordy.kaue@icloud.com' + '&body=' + encodeURIComponent(info);
         window.open(mailtoLink, '_blank');
     }
 });
@@ -72,3 +72,34 @@ $(function(){
 });
 
 // LOAD ANIMATION ---
+
+
+document.getElementById('sendMensajeWhatsApp').addEventListener('click', function(event) {
+    event.preventDefault();
+    let mensajeWhatsApp = document.getElementById('mensajeWhatsApp').value;
+    
+    if (mensajeWhatsApp.trim() === "") {
+        alert("Por favor, ingresa un mensaje.");
+        return;
+    }
+
+    let encodedMessage = encodeURIComponent(mensajeWhatsApp);
+    
+    let whatsappUrl = `https://wa.me/34607255335?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+});
+
+
+
+$(function(){
+	$("#openWhatsApp").click(function(e){
+		$("#modalWindow").toggleClass("modalWindowNew");
+	});
+});
+
+$(function(){
+    $("#closeWhatsApp").click(function(e){
+        $("#modalWindow").removeClass("modalWindowNew");
+    })
+})
