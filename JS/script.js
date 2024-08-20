@@ -72,34 +72,3 @@ $(function(){
 });
 
 // LOAD ANIMATION ---
-
-
-document.getElementById('sendMensajeWhatsApp').addEventListener('click', function(event) {
-    event.preventDefault();
-    let mensajeWhatsApp = document.getElementById('mensajeWhatsApp').value;
-    
-    if (mensajeWhatsApp.trim() === "") {
-        alert("Por favor, ingresa un mensaje.");
-        return;
-    }
-
-    let encodedMessage = encodeURIComponent(mensajeWhatsApp);
-    
-    let whatsappUrl = `https://wa.me/34607255335?text=${encodedMessage}`;
-    
-    window.open(whatsappUrl, '_blank');
-});
-
-
-
-$(function(){
-	$("#openWhatsApp").click(function(e){
-		$("#modalWindow").toggleClass("modalWindowNew");
-	});
-});
-
-$(function(){
-    $("#closeWhatsApp").click(function(e){
-        $("#modalWindow").removeClass("modalWindowNew");
-    })
-})
